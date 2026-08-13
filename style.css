@@ -1,0 +1,230 @@
+@font-face {
+    font-family: "DM Mono";
+    src: url("./assets/fonts/dm-mono/DMMono-Regular.ttf") format("truetype");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "DM Mono";
+    src: url("./assets/fonts/dm-mono/DMMono-Medium.ttf") format("truetype");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "DM Sans";
+    src: url("./assets/fonts/dm-sans/DMSans-VariableFont_opsz,wght.ttf") format("truetype");
+    font-weight: 100 900;
+}
+
+@font-face {
+    font-family: "Fraunces";
+    src: url("./assets/fonts/fraunces/Fraunces-VariableFont_SOFT,WONK.ttf") format("truetype");
+    font-weight: 100 900;
+}
+
+@font-face {
+    font-family: "Fraunces";
+    src: url("./assets/fonts/fraunces/Fraunces-Italic-VariableFont_SOFT,WONK.ttf") format("truetype");
+    font-style: italic;
+    font-weight: 100 900;
+}
+
+
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.app {
+    font-family: "DM Sans", sans-serif;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    gap: 30px;
+    background-color: #FBF6F0;
+    min-height: 100dvh;
+    border: 1px solid #fdebd5;
+}
+
+.logo {
+    margin: 8px 10px;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.weather-footer {
+    margin-top: auto;
+    margin-bottom: 120px;
+}
+
+.button {
+    background-color: #FBF6F0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    padding: 8px 5px;
+    margin: auto;
+    margin-top: 8px;
+    font-size: 12px;
+    transition: 0.4s ease;
+    border-radius: 10px;
+}
+
+.buttons-icon {
+    transform: translateY(5px);
+}
+
+.button:hover {
+    background-color: hsl(0, 0%, 100%);
+    transform: translateY(-5px);
+}
+
+.button:focus {
+    outline: none;
+    border: 2px solid hsl(18, 62%, 47%);
+}
+
+.number-1 {
+    color: azure;
+    background-color: hsl(18, 62%, 47%);
+    padding: 5px;
+    margin-left: auto;
+    border-radius: 80%;
+    font-size: 8px;
+}
+
+.weather-container {
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(44, 84%, 75%);
+    background-image: url("/assets/images/icon-weather.svg");
+    background-position: right top;
+    background-size: 50px;
+    background-repeat: no-repeat;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 10px;
+}
+
+.city-details {
+    color: hsl(40, 5%, 64%);
+    font-size: 10px;
+    font-family: "DM Mono", monospace;
+}
+
+.weather-degree {
+    font-family: "Fraunces", serif;
+    font-size: 29px;
+}
+
+.footer-details {
+    font-family: "DM Mono", monospace;
+    font-size: 10px;
+    margin: 10px;
+    color: hsl(40, 4%, 51%);
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background: linear-gradient(to right, transparent, #59544e, transparent);
+    margin: 2px 0;
+}
+
+.host-notes-container {
+    background: linear-gradient(160deg,
+            hsl(22, 72%, 56%) 0%,
+            hsl(18, 62%, 47%) 35%,
+            hsl(15, 74%, 41%) 70%,
+            hsl(15, 69%, 37%) 100%);
+}
+
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.receipt {
+    color: black;
+    background-color: #FBF6F0;
+    border: 0.5px solid grey;
+    padding: 8px 16px;
+    border-radius: 30px;
+    font-size: 12px;
+    font-weight: 500;
+    transition: 0.5s ease;
+}
+
+.calender {
+    color: azure;
+    background-color: black;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 12px;
+    border: 0.5px solid #59544e;
+    font-weight: 500;
+    transition: 0.4s ease;
+    margin-right: 10px;
+}
+
+.feature-buttons {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.booking-details {
+    margin-top: 40px;
+}
+
+.booking-confirmation {
+    font-family: "DM Mono", monospace;
+    font-size: 13px;
+    margin: 10px;
+    color: hsl(40, 4%, 51%);
+}
+
+.welcome-user {
+    font-family: "Fraunces", serif;
+    font-weight: 500;
+}
+
+.username {
+    color: hsl(15, 74%, 41%);
+    font-style: italic;
+}
+
+.receipt:hover {
+    color: black;
+    background-color: #D8Bfd8;
+    transform: translateY(5px);
+    box-shadow: 1px 2px 8px gray;
+}
+
+.calender:hover {
+    background-color: #ADD8E6;
+    color: black;
+    transform: translateY(5px);
+    box-shadow: 1px 2px 8px gray;
+}
+
+.calender:focus {
+    outline: none;
+    border: 3px solid hsl(15, 74%, 41%);
+}
+.receipt:focus {
+    outline: none;
+    border: 3px solid hsl(15, 74%, 41%);
+}
