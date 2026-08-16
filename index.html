@@ -14,13 +14,14 @@
 <body>
     <div class="app">
         <aside class="sidebar">
+            <button class="close-menu">×</button>
             <div class="logo-buttons">
                 <img src="/assets/images/logo.svg" class="logo" />
                 <hr>
 
                 <div class="button-notification">
                     <button class="button"> <img class="buttons-icon"
-                            src="/assets/images/icon-bed.svg" /> Your Stay <p class="number-1">1</p>
+                            src="/assets/images/icon-bed.svg" /> Your Stay <p class="number-1"></p>
                         </button>
                 </div>
 
@@ -72,6 +73,7 @@
 
 
         <main>
+            <button class="open-menu">☰</button>
             <header class="header">
                 <div class="booking-details">
                     <span class="booking-confirmation">BOOKING · CONFIRMED</span>
@@ -248,10 +250,18 @@
             </section>
 
         </main>
+      </div>
 
 
 
+  <script>
+    const opneMenu = document.querySelector(".open-menu");
+    const closeMenu = document.querySelector(".close-menu");
+    const sidebar = document.querySelector(".sidebar");
 
+    opneMenu.addEventListener("click", () => sidebar.classList.add("open"));
+    closeMenu.addEventListener("click", () => sidebar.classList.remove("open"));
+  </script>
 
 
 
@@ -260,7 +270,7 @@
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
       Coded by <a href="#">Your Name Here</a>.
     </footer> -->
-    </div>
+    
 </body>
 
 </html>
