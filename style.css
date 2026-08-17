@@ -734,6 +734,7 @@ hr {
     width: 100vw;
     height: 100dvh;
     overflow-y: auto;
+    background-color: #add8e6;
   }
   .sidebar.open {
     transform: translateX(0);
